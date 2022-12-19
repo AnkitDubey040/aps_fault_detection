@@ -3,7 +3,7 @@ from typing import List
 
 REQUIREMENT_FILE_NAME = "requirements.txt"
 # NOw to trigger reuirements.txt file wqe use this : 
-HYPHEN_E_DOT = "-e."
+HYPHEN_E_DOT = "-e ."
 
 
 

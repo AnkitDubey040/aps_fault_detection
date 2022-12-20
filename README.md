@@ -1,6 +1,7 @@
 # Air Pressure Sensor - Fault Detection 
 
-![image](sensor/aps_image.jpeg)
+![1_pT9vCxg2Cn7R5DSnHNUDZw](https://user-images.githubusercontent.com/87509236/208734015-5d3a863b-3080-44f7-81a7-b1b5c63e11ad.jpeg)
+
 
 ### Step 1 - Install the requirements
 

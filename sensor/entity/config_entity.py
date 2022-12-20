@@ -7,6 +7,8 @@ FILE_NAME = "sensor.csv"
 TRAIN_FILE_NAME = "train.csv"
 TEST_FILE_NAME = "test.csv"
 
+
+#Each file or outpu that we generate we will store it in a folder using this function
 class TrainingPipelineConfig:
     def __init__(self):
         try:

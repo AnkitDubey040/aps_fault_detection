@@ -6,9 +6,6 @@ from sensor.entity import config_entity
 from sensor.components import data_ingestion
 
 
-
-
-
 if __name__=="__main__":
      try:
           # get_collection_as_dataframe(database_name = "aps",collection_name = "sensor")

@@ -34,7 +34,6 @@ def get_collection_as_dataframe(database_name:str , collection_name:str)->pd.Dat
         raise SensorException(e, sys)
 
 
-# yaml file for writing data
 def write_yaml_file(file_path,data:dict):
     try:
         file_dir = os.path.dirname(file_path)

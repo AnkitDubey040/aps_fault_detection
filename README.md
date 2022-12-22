@@ -62,7 +62,7 @@ or for forcefull changes:
 git push -f origin main
 ```
 
- Not : Origin contains url to the github repo 
+ Note : Origin contains url to the github repo 
 
 
 

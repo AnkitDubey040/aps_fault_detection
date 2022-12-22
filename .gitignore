@@ -3,14 +3,14 @@ __pycache__/
 *.py[cod]
 *$py.class
 artifact
-# C extensions
+# project files
 *.so
 prediction
-saved_models
 demotest.py
 logs
 artifacts
 raw_data
+saved_models
 # Distribution / packaging
 .Python
 build/

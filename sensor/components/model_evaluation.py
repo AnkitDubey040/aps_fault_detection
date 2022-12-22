@@ -88,7 +88,7 @@ class ModelEvaluation:
             # Comparing both Models
             if current_model_score<=previous_model_score:
                 logging.info(f"Current trained model is not better than previous model")
-                raise Exception("Current trained model is not better than previous model")
+                print("Current trained model is not better than previous model")
 
             model_eval_artifact = artifact_entity.ModelEvaluationArtifact(is_model_accepted=True,
             improved_accuracy=current_model_score-previous_model_score)
@@ -98,7 +98,5 @@ class ModelEvaluation:
 
         except Exception as e:
             raise SensorException(e,sys)
-
-
 
 

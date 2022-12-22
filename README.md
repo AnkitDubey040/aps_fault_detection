@@ -71,7 +71,15 @@ git push -f origin main
 ```
 git pull origin
 ```
+For batch Prediction :
+```
+python batch_prediction_main.py
+```
 
+For instace Prediction and running training pipeline:
+```
+python train_instance_pred_main.py
+```
 
 
 

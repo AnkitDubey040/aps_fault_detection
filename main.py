@@ -8,6 +8,7 @@ from sensor.components import data_validation
 from sensor.components import model_trainer
 from sensor.components import data_transformation
 from sensor.components import model_evaluation
+from sensor.components import model_pusher
 
 
 if __name__=="__main__":
@@ -41,6 +42,11 @@ if __name__=="__main__":
           model_eval_config = config_entity.ModelEvaluationConfig(training_pipeline_config=training_pipeline_config)
           model_eval = model_evaluation.ModelEvaluation(model_eval_config=model_eval_config, data_ingestion_artifact = data_ingestion_artifact, data_transformation_artifact=data_transformation_artifact, model_trainer_artifact = model_trainer_artifact)
           model_eval_artifact = model_eval.initiate_model_evaluation()
+
+          # Model Pusher 
+          model_pusher_config = config_entity.ModelPusherConfig(training_pipeline_config=training_pipeline_config)
+          model_pusher = model_pusher.ModelPusher(model_pusher_config = model_pusher_config, data_transformation_artifact = data_transformation_artifact, model_trainer_artifact = model_trainer_artifact)
+          model_pusher_artifact = model_pusher.initiate_model_pusher()
 
 
 

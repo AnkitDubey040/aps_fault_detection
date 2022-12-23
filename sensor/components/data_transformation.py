@@ -95,7 +95,8 @@ class DataTransformation:
             # save pipeline object and label_encoder object
             utils.save_object(file_path=self.data_transformation_config.transform_object_path,obj=transformation_pipleine)
             utils.save_object(file_path=self.data_transformation_config.target_encoder_path,obj=label_encoder)
-
+            
+            #preparing Artifact
             data_transformation_artifact = artifact_entity.DataTransformationArtifact(
                 transform_object_path=self.data_transformation_config.transform_object_path,
                 transformed_train_path = self.data_transformation_config.transformed_train_path,

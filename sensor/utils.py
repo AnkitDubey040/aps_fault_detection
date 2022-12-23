@@ -40,8 +40,6 @@ def write_yaml_file(file_path,data:dict):
         os.makedirs(file_dir,exist_ok =True)
         with open(file_path,"w") as file_writer:
             yaml.dump(data,file_writer)
-
-
     except Exception as e:
         raise SensorException(e,sys)
 
@@ -65,10 +63,10 @@ def save_object(file_path: str, obj: object) -> None:
     except Exception as e:
         raise SensorException(e, sys) from e
 
-def load_object(file_path: str, ) -> object:
+def load_object(file_path: str) -> object:
     try:
         if not os.path.exists(file_path):
-            raise Exception(f"The file: {file_path} is not exists")
+            raise Exception(f"The file: {file_path} does not exists")
         with open(file_path, "rb") as file_obj:
             return dill.load(file_obj)
     except Exception as e:

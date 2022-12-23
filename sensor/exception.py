@@ -6,7 +6,7 @@ import os
 def error_message_detail(error,error_detail: sys):
 
     #exc_tb is for getting lineno 
-    _,_,exc_tb = error_detail.exc_info()
+    _, _, exc_tb = error_detail.exc_info()
 
     #to get file name : 
     file_name = exc_tb.tb_frame.f_code.co_filename

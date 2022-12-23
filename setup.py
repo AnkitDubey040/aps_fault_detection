@@ -27,7 +27,7 @@ setup(
     author = "AnkitDubey040",
     author_email="ankitdubey04052001@gmail.com",
     packages = find_packages(), 
-    install_requirements = get_requirements(),
+    install_requires = get_requirements(),
     # sensor folder will have all the source code 
     # what find packages does is go to sensor folder and find all the packages used
     # also we create a file __init__.py file in sensor because any folder with this file is considered as a package by find_packages()

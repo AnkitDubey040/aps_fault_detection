@@ -48,8 +48,8 @@ class ModelPusher:
             save_object(file_path=model_path, obj=model)
             save_object(file_path=target_encoder_path, obj=target_encoder)
 
-            model_pusher_artifact = ModelPusherArtifact(pusher_model_dir=self.model_pusher_config.pusher_model_dir,
-             saved_model_dir=self.model_pusher_config.saved_model_dir)
+            # Preparing Artifact
+            model_pusher_artifact = ModelPusherArtifact(pusher_model_dir=self.model_pusher_config.pusher_model_dir,saved_model_dir=self.model_pusher_config.saved_model_dir)
             logging.info(f"Model pusher artifact: {model_pusher_artifact}")
             return model_pusher_artifact
         

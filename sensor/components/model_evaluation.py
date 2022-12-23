@@ -9,7 +9,6 @@ from sensor.config import TARGET_COLUMN
 from sklearn.metrics import f1_score
 
 
-
 class ModelEvaluation:
 
     def __init__(self,
@@ -39,8 +38,7 @@ class ModelEvaluation:
     
             latest_dir_path = self.model_resolver.get_latest_dir_path()
             if latest_dir_path==None:
-                model_eval_artifact = artifact_entity.ModelEvaluationArtifact(is_model_accepted=True,
-                improved_accuracy=None)
+                model_eval_artifact = artifact_entity.ModelEvaluationArtifact(is_model_accepted=True,improved_accuracy=None)
                 logging.info(f"Model evaluation artifact: {model_eval_artifact}")
                 return model_eval_artifact
 

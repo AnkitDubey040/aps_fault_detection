@@ -12,6 +12,7 @@ artifacts
 raw_data
 saved_models
 sensor.egg-info
+*.egg-info
 # Distribution / packaging
 .Python
 build/
